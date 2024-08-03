@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios de Contagem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .resultado {
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercícios de Contagem</h1>
+  <div>
+    <button onclick="contador1a10()">Contador de 1 a 10</button>
+    <button onclick="contador10a0()">Contador de 10 a 0</button>
+    <button onclick="contagemRegressiva()">Contagem Regressiva</button>
+    <button onclick="contagemProgressiva()">Contagem Progressiva</button>
+  </div>
+
+  <div id="resultado" class="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
