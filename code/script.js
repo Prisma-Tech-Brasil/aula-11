@@ -3,11 +3,11 @@ const tarefas = [];
 function adicionarTarefa(lista, novaTarefa) {
   if (novaTarefa) {
     lista.push(novaTarefa);
-    exibirLista(lista);
+    exibirLista();
   }
 }
 
-function exibirLista(lista) {
+function exibirLista() {
   const taskListElement = document.getElementById("taskList");
   taskListElement.innerHTML = "";
   for (let indice = 0; indice < tarefas.length; indice++) {
