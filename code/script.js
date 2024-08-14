@@ -1,4 +1,5 @@
 const tarefas = [];
+
 function adicionarTarefa(lista, novaTarefa) {
   if (novaTarefa) {
     lista.push(novaTarefa);
@@ -9,17 +10,14 @@ function adicionarTarefa(lista, novaTarefa) {
 function exibirLista(lista) {
   const taskListElement = document.getElementById("taskList");
   taskListElement.innerHTML = "";
-  lista.forEach((tarefa, index) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = `${index + 1}. ${tarefa}`;
-    taskListElement.appendChild(listItem);
-  });
+  for (let indice = 0; indice < tarefas.length; indice++) {
+    taskListElement.innerHTML += `<li>${indice + 1}. ${tarefas[indice]}</li>`;
+  };
 }
 
 document.getElementById("addTaskButton").addEventListener("click", () => {
   const taskInput = document.getElementById("taskInput");
-  const novaTarefa = taskInput.value.trim();
+  const novaTarefa = taskInput.value;
   adicionarTarefa(tarefas, novaTarefa);
   taskInput.value = "";
-  taskInput.focus();
 });
