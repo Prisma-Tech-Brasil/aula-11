@@ -1,16 +1,17 @@
-// Função para mostrar o resultado na página
-function mostrarResultado(resultado) {
-  document.getElementById('resultado').innerHTML = resultado;
+// for (criacao indice; condição; incremento) {}
+
+for (let i = 1; i <= 100; i++) {
+  console.log("Contador:", i);
 }
 
-// Contador de 1 a 10 usando while
+let i = 101;
+while (i <= 100) {
+  console.log("Contador:", i);
+  i++
+}
 
-
-// Contador de 10 a 0 usando while
-
-
-// Contagem regressiva com número fornecido pelo usuário
-
-
-// Contagem progressiva com número fornecido pelo usuário
-
+let j = 101;
+do {
+  console.log("Contador:", j);
+  j++
+} while(j <= 100)
